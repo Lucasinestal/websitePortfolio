@@ -1,51 +1,16 @@
-$grey-border: 4px solid #4B4B4C;
-$primary-color: #fa3838;
-$secondary-color: #4B4B4C;
-$side-hover: solid 2px white;
+//variables & some bootstrap overrides
+$noDisplay: none;
+$display: flex;
+$opacity: 0.9;
+$border-width: 3px;
+$theme-colors: (
+  "primary": #4B4B4C,
+  "danger": #fa3838,
+);
 
-.fab{
-    margin: 30px;
-}
-.content{
-    background-color: white;
-    color:$secondary-color;
-    padding: 20px;
-    opacity: 0.9;
-    border:$secondary-color 1px solid;
-    border-radius: 30px;
-    font-size: 20px;
-}
 
-#profilePic{
-    background-color: $primary-color;
-    margin: 15vh 0 2vh 0;
-}
-.btn{
-    color:white;
 
-    margin-bottom:1px;
-    border-radius: 0;
-}
+//Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
 
-.btn:hover{
-    color:white;
-    border-bottom:$side-hover;
-}
-#footer{
-   background-color:$secondary-color;
-   height:20vh;
-   margin:0;
-}
 
-#sideSection {
-    background-color:#fa3838;
-    
-  }
-.text-light{
-    color:$secondary-color;
-}
-
-.socialIcons:hover{
-    font-size:34px;
-
-    }

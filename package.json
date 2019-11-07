@@ -1,0 +1,22 @@
+{
+  "name": "websiteportfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucasinestal/websitePortfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lucasinestal/websitePortfolio/issues"
+  },
+  "homepage": "https://github.com/Lucasinestal/websitePortfolio#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}
