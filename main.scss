@@ -1,12 +1,28 @@
-//variables & some bootstrap overrides
-$noDisplay: none;
-$display: flex;
-$opacity: 0.9;
-$border-width: 3px;
+//variables & some bootstrap overrides¨
+
+$font-family-base:'Poppins', sans-serif;
+$border-width: 0.5px;
+$border-radius: 30px;
+$spacer:2rem;
+$sizes: (
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  85: 85%,
+  95: 95%,
+  100: 100%,
+);
 $theme-colors: (
   "primary": #4B4B4C,
   "danger": #fa3838,
+  "secondary" : white
 );
+
+#content{
+  opacity: 0.8;
+}
+
+
 
 
 
