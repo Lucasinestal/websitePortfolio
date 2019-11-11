@@ -10,13 +10,22 @@
     <title>Lucas Inestal Website</title>
 </head>
 <body>
-  
+    
     <!--Home Container-->
     <div id="homeContainer" class="w-100 p-0">
         <div class="row h-100">
-
             <!--Side Section-->
             <div id="sideSection" class="bg-danger col-sm-4 d-flex flex-column">
+               
+                    <div class="langBtn btn-group d-flex justify-content-end mt-2">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle col-sm-4  align-items-center" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="selectLang">Välj språk</span>
+                        </button>
+                        <div class="dropdown-menu rounded-0 p-1">
+                            <a href="#"><li class="selectedSE border-bottom border-dark">Svenska</li></a>
+                            <a href="#"><li class="selectedEN border-bottom border-dark">Engelska</li></a>
+                        </div>
+                    </div>
                 <div class="d-flex justify-content-center">
                     <img id="profilePic" width="40%" class="mt-5 shadow-lg p-1 bg-white rounded img-fluid rounded-circle"src="images/profilePic.jpg">
                 </div>
@@ -24,7 +33,7 @@
                     <h4 id="name"class="d-flex text-light justify-content-center mb-0">
                         Lucas Inestal
                     </h4>
-                    <h5 class="d-flex text-light justify-content-center">
+                    <h5 class="d-flex text-light justify-content-center text-center">
                         Fullstack web-developer Student
                     </h5>
                 </div>
@@ -42,13 +51,13 @@
                         <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                           <ul class="nav flex-column ">
                             <li class="nav-item">
-                              <a href="#" class="nav-link text-light"><i class="fas fa-home"></i> Hem</a>
+                              <a href="#" class="homeLink nav-link text-light"><i class="fas fa-home"></i> Hem </a>
                             </li>
                             <li class="nav-item">
-                              <a href="#" class="nav-link text-light"><i class="fas fa-suitcase"></i> Portfolio</a>
+                              <a href="#" class="portfolioLink nav-link text-light"><i class="fas fa-suitcase"></i> Portfolio </a>
                             </li>
                             <li class="nav-item">
-                              <a href="#" class="nav-link text-light"><i class="fas fa-phone-square-alt"></i> Kontakt</a>
+                              <a href="#" class="contactLink nav-link text-light"><i class="fas fa-phone-square-alt"></i> Kontakt </a>
                             </li>
                           </ul>
                         </div>
@@ -65,37 +74,41 @@
             <!--Content Section-->
             <div id="contentSection" style ="background-image: url('images/Stockholm.jpg');"class="col-sm h-100 d-flex p-0">
                 <div class="d-flex flex-column justify-content-center align-items-center ml-auto mr-auto mt-auto mb-auto w-85">
-                    <div id="content" class="d-flex flex-column justify-content-center bg-white shadow rounded">
-                        <h4 class="text-center mt-3">Om mig</h4>
-                        <p class="w-100 text-center p-1 tex">Hej, mitt namn är Lucas Inestal och jag studerar webbutveckling fullstack open-source på Nackademin i Solna. Jag har alltid haft ett stort intresse för teknik och design och det var det som fick mig att ta steget till att studera till fullstack utvecklare.</p> 
-                        <h4 class="text-center mt-2">Kompetenser</h4>
-                        <div class="row text-center d-flex justify-content-center "> 
-                            <div class="d-flex flex-column m-2">
-                                <i class=" fab fa-sass fa-2x"></i>
-                                <label>SASS</label>
-                            </div>
-                            <div class="d-flex flex-column m-2">
-                                    <i class="fab fa-js-square fa-2x"></i>
-                                <label>Javascript</label>
-                            </div>
-                            <div class="d-flex flex-column m-2">
-                                    <i class="fab fa-css3-alt fa-2x"></i>
-                                <label>CSS</label>
-                            </div>
+                    <div id="contentAboutSe" class="d-flex row justify-content-center bg-white shadow rounded ">
+                        <div class="col-sm border-right border-dark d-flex flex-column align-items-center justify-content-center">
+                            <h4 id="aboutHEN" class="text-center mt-3">Om mig</h4>
+                            <p id="aboutPEN" class="w-100 text-center p-1 tex">Hej, mitt namn är Lucas Inestal och jag studerar webbutveckling fullstack open-source på Nackademin i Solna. Jag har alltid haft ett stort intresse för teknik och design och det var det som fick mig att ta steget till att studera till fullstack utvecklare.</p> 
                         </div>
-                        <div class="row text-center d-flex justify-content-center"> 
-                            <div class="d-flex flex-column m-2">
-                                    <i class="fab fa-less fa-2x"></i>
-                                    <label>LESS</label>
-                            </div>     
-                            <div class="d-flex flex-column m-2">
-                                    <i class="fab fa-bootstrap fa-2x"></i>
-                                    <label>Bootstrap</label>
-                            </div>
-                            <div class="d-flex flex-column m-2">
-                                    <i class="fab fa-html5 fa-2x"></i>
-                                    <label>HTML</label>
+                        <div class="col-sm-5">
+                            <h4 id="skillsEN" class="text-center mt-3">Kompetenser</h4>
+                            <div class="row text-center d-flex justify-content-center "> 
+                                <div class="d-flex flex-column m-2">
+                                    <i class=" fab fa-sass fa-3x"></i>
+                                    <label>SASS</label>
                                 </div>
+                                <div class="d-flex flex-column m-2">
+                                        <i class="fab fa-js-square fa-3x"></i>
+                                    <label>Javascript</label>
+                                </div>
+                                <div class="d-flex flex-column m-2">
+                                        <i class="fab fa-css3-alt fa-3x"></i>
+                                    <label>CSS</label>
+                                </div>
+                            </div>
+                            <div class="row text-center d-flex justify-content-center"> 
+                                <div class="d-flex flex-column m-2">
+                                        <i class="fab fa-less fa-3x"></i>
+                                        <label>LESS</label>
+                                </div>     
+                                <div class="d-flex flex-column m-2">
+                                        <i class="fab fa-bootstrap fa-3x"></i>
+                                        <label>Bootstrap</label>
+                                </div>
+                                <div class="d-flex flex-column m-2">
+                                <i class="fab fa-html5 fa-3x"></i>
+                                <label>HTML</label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -104,7 +117,173 @@
         </div>
     </div>
     <!--Home-container end-->
+    <!--Portfolio Container-->
+    <div id="portfolioContainer" class="w-100 p-0">
+            <div class="row h-100">
+    
+                <!--Side Section-->
+                <div id="sideSectionPortfolio" class="bg-danger col-sm-4 d-flex flex-column">
+                        <div class="btn-group d-flex justify-content-end mt-2">
+                                <button class="langBtn btn btn-secondary btn-sm dropdown-toggle col-sm-4  align-items-center" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="selectLang">Välj språk</span>
+                                </button>
+                                <div class="dropdown-menu rounded-0 p-1">
+                                    <a href="#"><li class="selectedSE border-bottom border-dark">Svenska</li></a>
+                                    <a href="#"><li class="selectedEN border-bottom border-dark">Engelska</li></a>
+                                </div>
+                            </div>
+                    <div class="d-flex justify-content-center">
+                        <img id="profilePic" width="40%" class="mt-5 shadow-lg p-1 bg-white rounded img-fluid rounded-circle"src="images/profilePic.jpg">
+                    </div>
+                    <div class="mt-3">
+                        <h4 id="name"class="d-flex text-light justify-content-center mb-0">
+                            Lucas Inestal
+                        </h4>
+                        <h5 class="d-flex text-light justify-content-center text-center">
+                            Fullstack web-developer Student
+                        </h5>
+                    </div>
+                    <!--Navigation-->
+                    <nav class="navbar navbar-expand-lg navbar-dark border-top bg-danger mt-4" id="sideNav">
+                            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                              <span class="d-block d-lg-none"></span>
+                              <span class="d-none d-lg-block">
+                                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+                              </span>
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                              <ul class="nav flex-column ">
+                                <li class="nav-item">
+                                  <a href="#" class="homeLink nav-link text-light"><i class="fas fa-home"></i> Hem </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a href="#" class="portfolioLink nav-link text-light"><i class="fas fa-suitcase"></i> Portfolio </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a href="#" class="contactLink nav-link text-light"><i class="fas fa-phone-square-alt"></i> Kontakt </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </nav>
+                          <!--Navigation End-->
+                    <div class="pr-2 h-100 d-flex justify-content-end align-items-end">
+                            <a href="mailto:lucasainestal@gmail.com"><i class="socialIcons text-light shadow m-2 fas fa-envelope-square fa-2x"></i></a>
+                            <i class="socialIcons text-light shadow m-2 fab fa-github-square fa-2x"></i>
+                            <i class="socialIcons text-light shadow m-2 fab fa-linkedin fa-2x"></i>
+                    </div>
+                </div>
+                <!--Side Section End-->
+    
+                <!--Content Section-->
+                <div id="contentSectionPortfolio" style ="background-image: url('images/Stockholm.jpg');" class="overflow-auto col-sm h-100 d-flex p-0 flex-column">
+                    <div class="d-flex flex-column mt-5 align-items-center justify-content-center">
+                        <div class="d-flex flex-column ml-3 text-light text-center rounded">
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <h2 class="border rounded p-2 border-white mb-5 shadow">Portfolio</h2>
+    
+                                <img class="w-50 border border-dark shadow mb-5 rounded" src="Images/weatherApp.png">
+    
+                                <img class="w-50 border border-dark shadow rounded mb-5 " src="Images/website.png">
+    
+                                <img class="w-50 border border-dark shadow mb-5 rounded" src="Images/QuizProject.png">
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    </div>
+                </div>
+                <!--Content Section End--> 
+            </div>
+            <!--PortfolioContainer End-->
+<!--Contact Container-->
+        <div id="contactContainer" class="w-100 p-0">
+                <div class="row h-100">
 
+                    <!--Side Section-->
+                    <div id="sideSectionContact" class="bg-danger col-sm-4 d-flex flex-column">
+                            <div class="btn-group d-flex justify-content-end mt-2">
+                                    <button class="langBtn btn btn-secondary btn-sm dropdown-toggle col-sm-4  align-items-center" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="selectLang">Välj språk</span>
+                                    </button>
+                                    <div class="dropdown-menu rounded-0 p-1">
+                                        <a href="#"><li class="selectedSE border-bottom border-dark">Svenska</li></a>
+                                        <a href="#"><li class="selectedEN border-bottom border-dark">Engelska</li></a>
+                                    </div>
+                                </div>
+                        <div class="d-flex justify-content-center">
+                            <img id="profilePic" width="40%" class="mt-5 shadow-lg p-1 bg-white rounded img-fluid rounded-circle"src="images/profilePic.jpg">
+                        </div>
+                        <div class="mt-3">
+                            <h4 id="name"class="d-flex text-light justify-content-center mb-0">
+                                Lucas Inestal
+                            </h4>
+                            <h5 class="d-flex text-light justify-content-center text-center">
+                                Fullstack web-developer Student
+                            </h5>
+                        </div>
+                        <!--Navigation-->
+                        <nav class="navbar navbar-expand-lg navbar-dark border-top bg-danger mt-4" id="sideNav">
+                                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                                <span class="d-block d-lg-none"></span>
+                                <span class="d-none d-lg-block">
+                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+                                </span>
+                                </a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                                <ul class="nav flex-column ">
+                                    <li class="nav-item">
+                                    <a href="#" class="homeLink nav-link text-light"><i class="fas fa-home"></i> Hem </a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a href="#" class="portfolioLink nav-link text-light"><i class="fas fa-suitcase"></i> Portfolio </a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a href="#" class="contactLink nav-link text-light"><i class="fas fa-phone-square-alt"></i> Kontakt </a>
+                                    </li>
+                                </ul>
+                                </div>
+                            </nav>
+                            <!--Navigation End-->
+                        <div class="pr-2 h-100 d-flex justify-content-end align-items-end">
+                                <a href="mailto:lucasainestal@gmail.com"><i class="socialIcons text-light shadow m-2 fas fa-envelope-square fa-2x"></i></a>
+                                <i class="socialIcons text-light shadow m-2 fab fa-github-square fa-2x"></i>
+                                <i class="socialIcons text-light shadow m-2 fab fa-linkedin fa-2x"></i>
+                        </div>
+                    </div>
+                    <!--Side Section End-->
+
+                    <!--Content Section-->
+                    <div id="contactContentSection" style ="background-image: url('images/Stockholm.jpg');"class="col-sm h-100 d-flex p-0">
+                        <div class="d-flex flex-column justify-content-center align-items-center ml-auto mr-auto mt-auto mb-auto w-85">
+                            <div id="content" class="d-flex flex-column justify-content-center bg-white shadow rounded p-3">
+                                <h4 id="contactEN"class="text-center mt-3">Kontakta mig</h4>
+                                <ul>
+                                    <li>Email: <a href="mailto:lucasainestal@gmail.com" type="blank">Lucasainestal@gmail.com</a></li>
+                                    <li>Adress: <a>Hallandsgatan 48 118 57 Stockholm</a></li>
+                                    <li id="phoneLI">Telefon: <span>073-318 62 05</span></li>
+                                    <li>LinkedIn: <a>Lucasinestal</a></li>
+                                    <li>Github: <span>Lucasinestal</span></li>
+                                </ul>
+                                <div class="row align-items-center justify-content-center">
+                                    <a href="mailto:lucasainestal@gmail.com"><i class="socialIcons shadow m-2 fas fa-envelope-square fa-3x"></i></a>
+                                    <i class="socialIcons   m-2 fab fa-github-square fa-3x"></i>
+                                    <i class="socialIcons   m-2 fab fa-linkedin fa-3x"></i>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <!--Content Section End--> 
+                </div>
+
+    <!--ContactContainer end-->
     
     <script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
