@@ -17,13 +17,11 @@ $theme-colors: (
   "secondary" : white
 );
 
-#content{
+.contentDivs{
   opacity: 0.8;
 }
 
-#contentAboutSe{
-  opacity: 0.8;
-}
+
 //Bootstrap
 @import "node_modules/bootstrap/scss/bootstrap";
 
