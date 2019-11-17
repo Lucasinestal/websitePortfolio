@@ -82,7 +82,7 @@
       $(".selectedSE").html("Swedish")
       $(".selectedEN").html("English")
       $("#aboutHEN").html("About")
-      $("#aboutPEN").html("Hi, my name is Lucas Inestal and I am studying web development full stack open-source at Nackademin in Solna. I've always had a keen interest in technology and design and that's what made me take the step to study for full stack developers.");
+      $("#aboutPEN").html("Hi, my name is Lucas Inestal and I am studying web development full stack open-source at Nackademin in Solna. I've always had a keen interest in technology and design and that's what made me take the step to study for full stack developer.");
       $("#skillsEN").html("Skills")
       $(".homeLink").html('<i class="fas fa-home"></i>' + " Home")
       $(".contactLink").html('<i class="fas fa-suitcase"></i>' + " Contact")

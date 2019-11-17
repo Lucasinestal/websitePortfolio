@@ -3,6 +3,7 @@ $font-family-base:'Poppins', sans-serif;
 $border-width: 0.5px;
 $border-radius: 30px;
 $spacer:2rem;
+$lineH: 1.5;
 $sizes: (
   25: 25%,
   50: 50%,
@@ -12,14 +13,33 @@ $sizes: (
   100: 100%,
 );
 $theme-colors: (
-  "primary": #4B4B4C,
-  "danger": #fa3838,
-  "secondary" : white
+  "primary": #1D1D20,
+  "danger": #2948ff,
+  "secondary" : rgb(255, 255, 255)
 );
 
 .contentDivs{
   opacity: 0.8;
 }
+
+.bg-danger,
+.btn-danger,
+.badge-danger,
+.alert-danger {
+    background-image: linear-gradient(to right, #396afc, #2948ff);
+}
+ p {
+ line-height: $lineH;
+ letter-spacing: 0.12;
+ word-spacing: 0.16;
+ }
+ li {
+   line-height: $lineH;
+   letter-spacing: 0.12;
+   word-spacing: 0.16;
+   border-spacing: 24px;
+ }
+
 
 
 //Bootstrap
